@@ -23,3 +23,14 @@ Batch consuming
 
 Kafka docker setup
 * https://docs.confluent.io/platform/current/quickstart/ce-docker-quickstart.html?utm_medium=sem&utm_source=google&utm_campaign=ch.sem_br.brand_tp.prs_tgt.confluent-brand_mt.mbm_rgn.emea_lng.eng_dv.all_con.confluent-docker&utm_term=%2Bconfluent%20%2Bdocker&creative=&device=c&placement=&gclid=EAIaIQobChMIxPfho-bB8wIVzkaRBR3-_g8rEAAYASAAEgIpF_D_BwE
+
+#Troubleshooting.
+When creating spring boot projects and consuming from kafka. Done use devtools.
+You will get classloading exceptions when consuming.
+
+```
+<dependency>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-devtools</artifactId>
+</dependency>
+```
